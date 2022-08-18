@@ -20,3 +20,16 @@ code {
   height: 100vh;
   width: 100vw;
 }
+
+.home-container {
+  background-image: url("https://i.pinimg.com/originals/f1/0f/4e/f10f4eecbafe16d7a2b50a8e06d121f8.gif");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
