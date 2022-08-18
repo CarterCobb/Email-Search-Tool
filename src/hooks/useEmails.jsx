@@ -17,6 +17,7 @@ const useEmails = (g_user, g_auth) => {
    * @param {String || null} page next page id
    */
   const requestAll = async (page = null) => {
+    setNextPage("")
     setLoading(true);
     const messages_raw = await (
       await fetch(
@@ -52,6 +53,7 @@ const useEmails = (g_user, g_auth) => {
    * @param {String} query
    */
   const search = async (query = "") => {
+    setNextPage("")
     setLoading(true);
     const messages_raw = await (
       await fetch(
