@@ -16,7 +16,6 @@ const ProtectedRoute = ({ element: Component, ...rest }) => {
     if (mounted) {
       const instance = gapi.auth2.getAuthInstance();
       const authed = instance.isSignedIn.get();
-      console.log(authed);
       setAuthenticated(authed);
       if (authed) {
         const profile = instance.currentUser.get().getBasicProfile();
