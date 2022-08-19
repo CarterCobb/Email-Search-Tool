@@ -9,7 +9,7 @@ const EmailTable = (props) => {
   const [body, setBody] = useState("");
   useEffect(() => {
     window.onclick = (event) => {
-      if (event.target == document.getElementById("detailsModal")) {
+      if (event.target === document.getElementById("detailsModal")) {
         document.body.style.overflow = "auto";
         var modal = document.getElementById("detailsModal");
         modal.style.display = "none";

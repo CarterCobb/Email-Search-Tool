@@ -16,17 +16,6 @@ const SearchPage = ({ g_user, g_auth }) => {
     emails.search(search);
   };
 
-  const styles = {
-    searchContainer: {
-      float: "left",
-      disply: "flex",
-      padding: "20px",
-      justifyContent: "flex-start",
-      alignItems: "flex-start",
-      flexDirection: "row",
-    },
-  };
-
   return (
     <div>
       <div
